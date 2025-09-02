@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .calculator {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      width: 260px;
+    }
+    .screen {
+      width: 100%;
+      height: 50px;
+      text-align: right;
+      margin-bottom: 10px;
+      font-size: 24px;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #fff;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background: #444;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #666;
+    }
+    .equal {
+      background: #ff9800;
+      color: #000;
+    }
+    .equal:hover {
+      background: #e68900;
+    }
+    .zero {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" class="screen" value="0" readonly>
+    <div class="buttons">
+      <button>AC</button>
+      <button>C</button>
+      <button>%</button>
+      <button>÷</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>×</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>-</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>+</button>
+      <button class="zero">0</button>
+      <button>.</button>
+      <button class="equal">=</button>
+    </div>
+  </div>
+</body>
+</html>

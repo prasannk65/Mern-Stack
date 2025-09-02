@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+
+    .top-bar {
+      background: #f5f4f4;
+      padding: 8px 30px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 18px;
+    }
+
+    nav {
+      background: #333;
+      padding: 14px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+a
+    .nav-links {
+      display: flex;
+      gap: 30px; 
+      margin-left: 30px; 
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s;
+    }
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #ff9800;
+      bottom: -5px;
+      left: 0;
+      transition: 0.3s;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    .nav-links a:hover {
+      color: #ff9800;
+    }
+
+    /* Search bar */
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 5px 10px;
+      border-radius: 20px;
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      padding: 6px 8px;
+      font-size: 15px;
+      border-radius: 20px;
+    }
+    .search-bar button {
+      border: none;
+      background: #ff9800;
+      color: #000;
+      padding: 6px 12px;
+      margin-left: 5px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .search-bar button:hover {
+      background: #e68900;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top social icons -->
+  <div class="top-bar">
+    <i class="fa-brands fa-facebook"></i>
+   <i class="fa-brands fa-instagram"></i>
+   <i class="fa-brands fa-youtube"></i>
+   <i class="fa-brands fa-snapchat"></i>
+   
+  </div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+  </nav>
+
+</body>
+</html>
